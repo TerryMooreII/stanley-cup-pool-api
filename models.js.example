@@ -1,0 +1,63 @@
+$('.team--logo').each(function(){
+  var team = $(this).next('.team--name').text();
+  var c = $(this).css('background-image')
+  console.log(team);
+  console.log(c.substring(5, c.length - 2));
+  console.log('-----------');
+})
+
+
+var league = {
+  name:String,
+  year: String,
+  members:[email addresses],
+  points:[
+    {
+      round:int,
+      points: int
+    }
+  ]
+}
+
+var bracket = {
+  "year": 2017,
+  "playoffs": [
+      {
+        "rank": 1,
+        "conference": String,
+        "team": TeamModel,
+        "wins":[
+          {
+            "round": 1,
+            "wins": int
+          }
+        ]
+      }
+    ]
+}
+
+var picks = {
+  "user": UserModel,
+  "league": LeagueModel,
+  "picks":[
+      {
+        "round": 1,
+        "bracket": 1,
+        "conference": String
+        "goals": int, //only used for stanleyCup final
+        "team": TeamModel
+      }
+  ]
+}
+
+var user = {
+  first: String,
+  last:String,
+  password:String,
+  email:String
+}
+
+
+
+calc score
+query for all users (get array of user ids)
